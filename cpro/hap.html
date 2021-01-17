@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.6.2 (Linux)"/>
+	<meta name="created" content="2021-01-12T15:56:35.032256570"/>
+	<meta name="changed" content="2021-01-12T15:57:03.682657021"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 115%; background: transparent }
+	</style>
+</head>
+<body lang="en-IN" link="#000080" vlink="#800000" dir="ltr"><p style="margin-bottom: 0cm; line-height: 100%">
+<font size="6" style="font-size: 22pt">27.</font><font size="6" style="font-size: 22pt"><u>PROGRAM
+T0 CHECK IF THE NUMBER IS HAPPY OR NOT:</u></font> <font size="3" style="font-size: 12pt"><u>(A
+number whose sum of the square of digits is ultimatly equal to 1 is a
+happy number. By ultimately we mean that starting with any positive
+number we continue the addition of square of digits till we get a
+single digit number (0 ~ 9))</u></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">#include&lt;stdio.h&gt;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">int main()</p>
+<p style="margin-bottom: 0cm; line-height: 100%">{</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   int n,a,n1,s=0;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   printf(&quot;Enter
+the number: &quot;);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    scanf(&quot;%d&quot;,&amp;n);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    n1=n;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     s=n;</p>
+<p style="margin-bottom: 0cm; line-height: 100%"> while(s&gt;9)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">  {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   s=0;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       while(n&gt;0)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">           a=n%10;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">           s=s+a*a;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">           n=n/10;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">            }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     n=s;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    if(s==1)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    printf(&quot;%d
+is happy number&quot;,n1);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">  else</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    printf(&quot;%d
+is not happy number&quot;,n1);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   }</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font size="5" style="font-size: 18pt"><u>OUTPUT
+:</u></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">Enter the number: 68</p>
+<p style="margin-bottom: 0cm; line-height: 100%">68 is happy number</p>
+</body>
+</html>

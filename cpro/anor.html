@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.6.2 (Linux)"/>
+	<meta name="created" content="2021-01-12T15:37:16.370015253"/>
+	<meta name="changed" content="2021-01-12T15:37:40.787470637"/>
+	<style type="text/css">
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm }
+	</style>
+</head>
+<body lang="en-IN" dir="ltr"><p style="margin-bottom: 0cm; line-height: 100%">
+<font size="6" style="font-size: 22pt">22.</font><font size="6" style="font-size: 22pt"><u>PROGRAM
+T0 DISPLAY ARMSTRONG NUMBER WITHIN RANGE:</u></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">#include&lt;stdio.h&gt;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">int main()</p>
+<p style="margin-bottom: 0cm; line-height: 100%">{</p>
+<p style="margin-bottom: 0cm; line-height: 100%">  int
+n,a,b,num,n1,i,d=0;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   printf(&quot;Enter
+the starting range: &quot;);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   scanf(&quot;%d&quot;,&amp;b);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    printf(&quot;Enter
+the ending range: &quot;);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     scanf(&quot;%d&quot;,&amp;n);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     
+for(i=b;i&lt;=n;i++)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      d=0;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       num=i;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        n1=num;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      while(num&gt;0)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">         {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    a=num%10;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">         d=d+a*a*a;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     num=num/10;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">           }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     if(d==n1)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       printf(&quot;%d
+is Armstrong\n&quot;,n1);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">}</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font size="5" style="font-size: 18pt"><u>OUTPUT
+:</u></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">Enter the starting
+range: 1</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Enter the ending
+range: 500</p>
+<p style="margin-bottom: 0cm; line-height: 100%">1 is Armstrong</p>
+<p style="margin-bottom: 0cm; line-height: 100%">153 is Armstrong</p>
+<p style="margin-bottom: 0cm; line-height: 100%">370 is Armstrong</p>
+<p style="margin-bottom: 0cm; line-height: 100%">371 is Armstrong</p>
+<p style="margin-bottom: 0cm; line-height: 100%">407 is Armstrong</p>
+</body>
+</html>

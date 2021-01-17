@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.6.2 (Linux)"/>
+	<meta name="created" content="2021-01-12T15:44:35.745638024"/>
+	<meta name="changed" content="2021-01-12T15:44:57.321680500"/>
+	<style type="text/css">
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm }
+	</style>
+</head>
+<body lang="en-IN" dir="ltr"><p style="margin-bottom: 0cm; line-height: 100%">
+<font size="6" style="font-size: 22pt">25.</font><font size="6" style="font-size: 22pt"><u>PROGRAM
+T0 FIND  AUTOMORFIC WITHIN RANGE:</u></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">#include&lt;stdio.h&gt;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">int main()</p>
+<p style="margin-bottom: 0cm; line-height: 100%">{</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       int
+i,j,n,n1,z=0;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      printf(&quot;Enter
+the start range:\n&quot;);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    scanf(&quot;%d&quot;,&amp;n);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    printf(&quot;Enter
+the end range:\n&quot;);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    scanf(&quot;%d&quot;,&amp;n1);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">  for(i=n;i&lt;=n1;i++)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        j=i*i;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       if(i&gt;0&amp;&amp;i&lt;=9)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     z=j%10;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">         }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   else
+if(i&gt;=10&amp;&amp;i&lt;100)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     z=j%100;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       else
+if(i&gt;=100&amp;&amp;i&lt;1000)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        z=j%1000;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">  }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      if(z==i)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    printf(&quot;%d
+is automorphic\n&quot;,i);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">  }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">}</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font size="5" style="font-size: 18pt"><u>OUTPUT
+:</u></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">Enter the start
+range:</p>
+<p style="margin-bottom: 0cm; line-height: 100%">0</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Enter the end range:</p>
+<p style="margin-bottom: 0cm; line-height: 100%">10</p>
+<p style="margin-bottom: 0cm; line-height: 100%">0 is automorphic</p>
+<p style="margin-bottom: 0cm; line-height: 100%">1 is automorphic</p>
+<p style="margin-bottom: 0cm; line-height: 100%">5 is automorphic</p>
+<p style="margin-bottom: 0cm; line-height: 100%">6 is automorphic</p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.6.2 (Linux)"/>
+	<meta name="created" content="2021-01-12T15:58:50.511434662"/>
+	<meta name="changed" content="2021-01-12T15:59:16.056541607"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 115%; background: transparent }
+	</style>
+</head>
+<body lang="en-IN" link="#000080" vlink="#800000" dir="ltr"><p style="margin-bottom: 0cm; line-height: 100%">
+<font size="6" style="font-size: 22pt">28.</font><font size="6" style="font-size: 22pt"><u>PROGRAM
+T0 CHECK IF THE NUMBER I IS SPECIAL OR NOT :</u></font><u>( A number
+is said to be special number when the sum of factorial of its digits
+is equal to the number itself. Example- 145 is a Special Number as
+1!+4!+5!=145.)</u></p>
+<p style="margin-bottom: 0cm; line-height: 100%">#include&lt;stdio.h&gt;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">int main()</p>
+<p style="margin-bottom: 0cm; line-height: 100%">{</p>
+<p style="margin-bottom: 0cm; line-height: 100%"> int
+n,a,i,n1,s=0,f=1;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      printf(&quot;Enter
+the number: &quot;);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     
+scanf(&quot;%d&quot;,&amp;n);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      n1=n;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      while(n&gt;0)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">          a=n%10;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">          f=1;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">         
+for(i=1;i&lt;=a;i++)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">          {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">              f=f*i;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">           }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">           s=s+f;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">           n=n/10;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        if(s==n1)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">          printf(&quot;%d
+is special number&quot;,n1);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        else</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">          printf(&quot;%d
+is not special number&quot;,n1);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    }</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font size="5" style="font-size: 18pt"><u>OUTPUT
+:</u></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">Enter the number:
+145</p>
+<p style="margin-bottom: 0cm; line-height: 100%">145 is special
+number</p>
+</body>
+</html>

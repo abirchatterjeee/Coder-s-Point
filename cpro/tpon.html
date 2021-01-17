@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.6.2 (Linux)"/>
+	<meta name="created" content="2021-01-12T15:39:32.758856397"/>
+	<meta name="changed" content="2021-01-12T15:40:06.216046065"/>
+	<style type="text/css">
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm }
+	</style>
+</head>
+<body lang="en-IN" dir="ltr"><p style="margin-bottom: 0cm; line-height: 100%">
+<font size="6" style="font-size: 22pt">23.</font><font size="6" style="font-size: 22pt"><u>PROGRAM
+T0 CHECK IF THE NUMBER IS TWINPRIME OR NOT:</u></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">#include&lt;stdio.h&gt;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">int main()</p>
+<p style="margin-bottom: 0cm; line-height: 100%">{</p>
+<p style="margin-bottom: 0cm; line-height: 100%">int
+i,j,n,n1,c=0,c1=0,diff;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    printf(&quot;Enter
+the first number:&quot;);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   scanf(&quot;%d&quot;,&amp;n);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   printf(&quot;Enter
+the second number:&quot;);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    scanf(&quot;%d&quot;,&amp;n1);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    diff=n-n1;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     
+for(i=1;i&lt;=n;i++)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       if(n%i==0)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      c=c+1;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">          }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">            }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    if(c&lt;=2)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     
+for(j=1;j&lt;=n1;j++)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     if(n1%j==0)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">{</p>
+<p style="margin-bottom: 0cm; line-height: 100%">          c1=c1+1;</p>
+<p style="margin-bottom: 0cm; line-height: 100%">             }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">      }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       if(c1&lt;=2)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">          {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       
+if(diff==2||diff==-2)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">            
+printf(&quot;Twin Prime&quot;);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">                    
+            }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        else</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">        printf(&quot;Not
+twin prime&quot;);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">            }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">          else</p>
+<p style="margin-bottom: 0cm; line-height: 100%">         {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">       printf(&quot;%d
+is not prime&quot;,n1);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">         }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">     }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">  else</p>
+<p style="margin-bottom: 0cm; line-height: 100%">  {</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    printf(&quot;%d
+is not prime&quot;,n);</p>
+<p style="margin-bottom: 0cm; line-height: 100%">    }</p>
+<p style="margin-bottom: 0cm; line-height: 100%">   }</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font size="5" style="font-size: 18pt"><u>OUTPUT
+:</u></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">Enter the first
+number: 11</p>
+<p style="margin-bottom: 0cm; line-height: 100%"> Enter the second
+number:13</p>
+<p style="margin-bottom: 0cm; line-height: 100%"> Twin Prime</p>
+</body>
+</html>
