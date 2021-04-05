@@ -7,7 +7,12 @@
   <title>Coder's Point</title>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  
   <img src="main.png" alt="logo" width="300">
   <div class="">
     <a class="" href="cmain.html"> <img src="c.png" alt="" width="200"> </a>
@@ -24,6 +29,20 @@
   <div class="">
     <a href="https://abirchatterjeee.github.io/Abir/">@abirchatterjee</a>
   </div>
+  
+      <script>
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+  
 </body>
 
 </html>
