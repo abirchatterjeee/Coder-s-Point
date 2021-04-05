@@ -7,7 +7,10 @@
   <title>C programing</title>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  
   <div class="tbn2">
     <img src="logo.png" alt="" width="100">
     <img src="c.png" alt="" width="200">
@@ -22,6 +25,18 @@
     <a class="" href="cp.html"> <img src="pat.png" alt="" width="200"> </a>
   </div>
   <a class="" href="index.html"> <img src="bk.png" alt="" width="50"> </a>
+  
+    <script>
+    var myVar;
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
 </body>
 
 </html>
